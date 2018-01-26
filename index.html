@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h3>傷害保険　インターネット事故受付（入力）</h3>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="callout">
+        <p>
+          以下の項目に必要事項をご記入の上、「入力内容の確認」ボタンを押してください。<br />
+          今後の事故の対応などにつきましては、当社よりご連絡いたします。
+        </p>
+      </div>
+
+      <div class="callout warning">
+        <p>
+          当社からのご連絡時間：平日午前9時から午後5時<br />
+          ※12月31日から1月3日は除きます。
+        </p>
+      </div>
+
+      <form data-abide novalidate>
+        <div class="row">
+          <div class="columns">
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i> 入力内容に誤りがあります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <span class="title-bar-title">保険証券番号をご入力ください</span>
+          </div>
+        </div>
+        <div class="row">
+          <label>証券番号</label>
+          <p class="help-text" id="exampleHelpText">お客さまの保険契約の証券番号をご入力ください。</p>
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <label>
+                <input type="text" placeholder="1234567890" aria-describedby="exampleHelpText" required>
+                <span class="form-error">
+                  証券番号 は必須です。
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <span class="title-bar-title">事故の内容をご入力ください</span>
+          </div>
+        </div>
+        <div class="row">
+          <label>事故発生日</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-3 medium-2 large-2 columns">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+              </select>
+              <span class="form-error">
+                事故発生日(年) は必須です。
+              </span>
+            </div>
+            年&nbsp;
+            <div class="small-2 medium-1 large-1 columns">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <span class="form-error">
+                事故発生日(月) は必須です。
+              </span>
+            </div>
+            月&nbsp;
+            <div class="small-2 medium-1 large-1 columns">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="31">31</option>
+              </select>
+              <span class="form-error">
+                事故発生日(日) は必須です。
+              </span>
+            </div>
+            日
+          </div>
+          <label>事故に遭われた方のお名前</label>
+          <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-6 large-6 cell">
+              <label>姓
+                <input type="text" placeholder="損保" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  事故に遭われた方のお名前(漢字) - 姓 は必須です。
+                </span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 large-6 cell">
+              <label>名
+                <input type="text" placeholder="太郎" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                    事故に遭われた方のお名前(漢字) - 名 は必須です。
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-6 large-6 cell">
+              <label>セイ
+                <input type="text" placeholder="ソンポ" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  事故に遭われた方のお名前(フリガナ) - セイ は必須です。
+                </span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 large-6 cell">
+              <label>メイ
+                <input type="text" placeholder="タロウ" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                    事故に遭われた方のお名前(フリガナ) - メイ は必須です。
+                </span>
+              </label>
+            </div>
+          </div>
+          <label>事故に遭われた方の性別</label>
+          <div class="grid-x grid-padding-x">
+            <fieldset class="medium-6 columns">
+              <input type="radio" name="gender" value="male" id="genderMale" required><label for="genderMale">男性</label>
+              <input type="radio" name="gender" value="female" id="genderFemale"><label for="genderFemale">女性</label>
+            </fieldset>
+          </div>
+          <label>ご契約者さまとの関係を選択して下さい</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-4 large-4 cell">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="honnin">本人</option>
+                <option value="haigusya">配偶者</option>
+                <option value="shinzoku">親族</option>
+                <option value="sonota">その他</option>
+              </select>
+              <span class="form-error">
+                  ご契約者さまとの関係 は必須です。
+              </span>
+            </div>
+          </div>
+          <label>事故の種類を選択してください</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-4 large-4 cell">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="nyuin">入院</option>
+                <option value="tuin">通院</option>
+                <option value="keikouhinsongai">携行品損害</option>
+                <option value="baisyo">賠償事故</option>
+                <option value="sonota">その他</option>
+              </select>
+              <span class="form-error">
+                  事故の種類 は必須です。
+              </span>
+            </div>
+          </div>
+          <label>おケガのご連絡の場合は以下もご入力ください</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-5 large-5 cell">
+              <select id="select">
+                  <option value=""></option>
+                  <option value="1">頭部</option>
+                  <option value="2">頸部</option>
+                  <option value="3">背部脊柱</option>
+                  <option value="4">腰部</option>
+                  <option value="5">上肢</option>
+                  <option value="6">下肢</option>
+                  <option value="7">全身</option>
+                  <option value="8">その他</option>
+              </select>
+              <p class="help-text" id="exampleHelpText">おケガされた部位を選択してください</p>
+            </div>
+            <div class="small-12 medium-5 large-5 cell">
+              <select id="select">
+                <option value=""></option>
+                <option value="1">骨折</option>
+                <option value="2">脱臼</option>
+                <option value="3">捻挫</option>
+                <option value="4">腱断裂</option>
+                <option value="5">靭帯損傷</option>
+                <option value="6">創傷</option>
+                <option value="7">打撲挫傷</option>
+                <option value="8">火傷</option>
+                <option value="9">その他</option>
+              </select>
+              <p class="help-text" id="exampleHelpText">おケガの症状を選択してください</p>
+            </div>
+          </div>
+          <label>ご要望事項</label>
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <p class="help-text" id="exampleHelpText">＊その他、この度の事故につきましてご連絡・ご要望事項などがございましたらご入力ください。（250文字以内）</p>
+              <textarea placeholder="ご要望・ご連絡事項" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <span class="title-bar-title">ご連絡先をご入力ください</span>
+          </div>
+        </div>
+        <div class="row">
+          <label>お名前</label>
+          <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-6 large-6 cell">
+              <label>姓
+                <input type="text" placeholder="損保" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  ご連絡先のお名前(漢字) - 姓 は必須です。
+                </span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 large-6 cell">
+              <label>名
+                <input type="text" placeholder="花子" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  ご連絡先のお名前(漢字) - 名 は必須です。
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-6 large-6 cell">
+              <label>セイ
+                <input type="text" placeholder="ソンポ" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  ご連絡先のお名前(フリガナ) - セイ は必須です。
+                </span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 large-6 cell">
+              <label>メイ
+                <input type="text" placeholder="ハナコ" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  ご連絡先のお名前(フリガナ) - メイ は必須です。
+                </span>
+              </label>
+            </div>
+          </div>
+          <label>ご連絡先電話番号</label>
+          <p class="help-text" id="exampleHelpText">日中ご連絡がつきやすい電話番号をご入力ください。</p>
+          <div class="grid-x grid-padding-x">
+            <div class="small-3 medium-3 large-3 cell">
+              <input type="text" placeholder="080" aria-describedby="exampleHelpText" required pattern="number">
+            </div>-
+            <div class="small-4 medium-4 large-4 cell">
+              <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+            </div>-
+            <div class="small-4 medium-4 large-4 cell">
+              <input type="text" placeholder="5678" aria-describedby="exampleHelpText" required pattern="number">
+            </div>
+          </div>
+        </div>
+
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <span class="title-bar-title">ご連絡先住所</span>
+          </div>
+        </div>
+        <div class="row">
+          <label>郵便番号</label>
+          <p class="help-text" id="exampleHelpText">例）100 - 0000（半角数字7桁）</p>
+          <div class="grid-x grid-padding-x">
+            〒<div class="small-12 medium-2 large-2 cell">
+              <input type="text" placeholder="123" aria-describedby="exampleHelpText" required pattern="number">
+            </div>-
+            <div class="small-12 medium-3 large-3 cell">
+              <input type="text" placeholder="4567" aria-describedby="exampleHelpText" required pattern="number">
+            </div>
+          </div>
+          <label>ご連絡先住所</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-3 large-2 cell">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="1">東京都</option>
+                <option value="2">大阪府</option>
+                <option value="3">愛媛県</option>
+              </select>
+            </div>
+            <div class="small-12 medium-4 large-3 cell">
+              <input type="text" placeholder="新宿区西新宿" aria-describedby="exampleHelpText" required>
+            </div>
+            <div class="small-12 medium-5 large-3 cell">
+              <input type="text" placeholder="1-26-1" aria-describedby="exampleHelpText" required>
+            </div>
+            <div class="small-12 medium-12 large-4 cell">
+              <input type="text" placeholder="新宿野村ビル 20F" aria-describedby="exampleHelpText" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <span class="title-bar-title">ご連絡先Eメールアドレス</span>
+          </div>
+        </div>
+        <div class="row">
+          <label>Ｅメールアドレス</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+              <input type="email" placeholder="sompo.taro@sjnk.co.jp" required>
+            </div>
+            <p class="help-text" id="exampleHelpText">※恐れ入りますが、確認のためもう一度ご入力ください。</p>
+            <div class="small-12 cell">
+              <input type="email">
+            </div>
+          </div>
+          <label>ご希望の連絡手段</label>
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 medium-4 large-4 cell">
+              <select id="select" required>
+                <option value=""></option>
+                <option value="tel">電話</option>
+                <option value="mail">Eメール</option>
+                <option value="doc">文書</option>
+                <option value="partner">代理店から連絡</option>
+              </select>
+              <span class="form-error">
+                  連絡手段 は必須です。
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="grid-x grid-padding-x">
+            <fieldset class="small-6 medium-6 columns">
+              <button class="button float-center" type="submit" value="Submit">入力内容の確認</button>
+            </fieldset>
+            <fieldset class="small-6 medium-6 columns">
+              <button class="button float-center" type="reset" value="Reset">クリア</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
