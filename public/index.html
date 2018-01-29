@@ -69,52 +69,58 @@
           <label class="required">事故発生日</label>
           <div class="grid-x grid-padding-x">
             <div class="small-3 medium-2 large-2 columns">
-              <select id="select" required>
-                <option value=""></option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-              </select>
-              <span class="form-error">
-                事故発生日(年) は必須です。
-              </span>
+              <div class="input-group">
+                <select id="select" class="input-group-field" required>
+                  <option value=""></option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                </select>
+                <span class="input-group-label">年</span>
+              </div>
             </div>
-            年&nbsp;
+            <span class="form-error">
+              事故発生日(年) は必須です。
+            </span>
             <div class="small-2 medium-1 large-1 columns">
-              <select id="select" required>
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
+              <div class="input-group">
+                <select id="select" class="input-group-field" required>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <span class="input-group-label">月</span>
+              </div>
               <span class="form-error">
                 事故発生日(月) は必須です。
               </span>
             </div>
-            月&nbsp;
             <div class="small-2 medium-1 large-1 columns">
-              <select id="select" required>
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="5">5</option>
-                <option value="10">10</option>
-                <option value="15">15</option>
-                <option value="20">20</option>
-                <option value="31">31</option>
-              </select>
+              <div class="input-group">
+                <select id="select" class="input-group-field" required>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="31">31</option>
+                </select>
+                <span class="input-group-label">日</span>
+              </div>
               <span class="form-error">
                 事故発生日(日) は必須です。
               </span>
             </div>
-            日
           </div>
           <label class="required">事故に遭われた方のお名前</label>
           <div class="grid-x grid-padding-x">
@@ -280,10 +286,12 @@
           <div class="grid-x grid-padding-x">
             <div class="small-3 medium-3 large-3 cell">
               <input type="text" placeholder="080" aria-describedby="exampleHelpText" required pattern="number">
-            </div>-
+            </div>
+            <label class="middle">-</label>
             <div class="small-4 medium-4 large-4 cell">
               <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
-            </div>-
+            </div>
+            <label class="middle">-</label>
             <div class="small-4 medium-4 large-4 cell">
               <input type="text" placeholder="5678" aria-describedby="exampleHelpText" required pattern="number">
             </div>
@@ -297,13 +305,13 @@
         </div>
         <div class="row">
           <label class="required">郵便番号</label>
-          <p class="help-text" id="exampleHelpText">例）100 - 0000（半角数字7桁）</p>
+          <p class="help-text" id="exampleHelpText">例）1230987（半角数字7桁、ハイフンなし）</p>
           <div class="grid-x grid-padding-x">
-            〒<div class="small-12 medium-2 large-2 cell">
-              <input type="text" placeholder="123" aria-describedby="exampleHelpText" required pattern="number">
-            </div>-
-            <div class="small-12 medium-3 large-3 cell">
-              <input type="text" placeholder="4567" aria-describedby="exampleHelpText" required pattern="number">
+            <div class="input-group">
+              <span class="input-group-label">〒</span>
+              <div class="small-12 medium-2 large-2 columns">
+                <input type="text" class="input-group-field" placeholder="1230987" aria-describedby="exampleHelpText" required pattern="number">
+              </div>
             </div>
           </div>
           <label class="required">ご連絡先住所</label>
