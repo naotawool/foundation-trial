@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.required::after {
+    font-size: 80%;
+    color: red;
+    content: " ※必須";
+}
